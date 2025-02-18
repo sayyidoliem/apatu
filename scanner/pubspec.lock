@@ -10,7 +10,7 @@ packages:
     source: hosted
     version: "2.11.0"
   bloc:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: bloc
       sha256: "52c10575f4445c61dd9e0cafcc6356fdd827c4c64dd7945ef3c4105f6b6ac189"
@@ -49,6 +49,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.0"
+  core:
+    dependency: "direct main"
+    description:
+      path: "../core"
+      relative: true
+    source: path
+    version: "0.0.1"
   cross_file:
     dependency: transitive
     description:
