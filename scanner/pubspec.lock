@@ -189,6 +189,7 @@ packages:
       sha256: "2f5709ae4d3d59dd8f7cd309b4e023046b57d8a6c82130785d2b0e5868084e76"
       url: "https://pub.dev"
     source: hosted
+<<<<<<< HEAD
     version: "1.19.1"
   convert:
     dependency: transitive
@@ -198,6 +199,16 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.2"
+=======
+    version: "1.19.0"
+  core:
+    dependency: "direct main"
+    description:
+      path: "../core"
+      relative: true
+    source: path
+    version: "0.0.1"
+>>>>>>> ad80dd96da952071e52434efb1d6575c4050fa85
   cross_file:
     dependency: transitive
     description:
