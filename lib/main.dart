@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:core/core.dart';
+import 'package:scanner/presentation/database/profile.dart';
+import 'package:scanner/presentation/page/profile_screen.dart';
 import 'package:scanner/scanner.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  Hive.registerAdapter(ProfileAdapter());
+  boxProfiles = await Hive.openBox<Profile>('profileBox');
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
@@ -20,13 +26,7 @@ class MyApp extends StatelessWidget {
           return ScannerPage();
         },
       ),
-      GoRoute(
-        name: RESULT_PAGE_ROUTE,
-        path: '/result',
-        builder: (context, state) {
-          return ResultPage();
-        },
-      )
+      GoRoute(path: path)
     ],
   );
 

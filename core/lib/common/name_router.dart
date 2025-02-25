@@ -1,2 +1,2 @@
 const SCANNER_PAGE_ROUTE = '/scanner-page';
-const RESULT_PAGE_ROUTE = '/result-page';
+const PROFILE_PAGE_ROUTE = '/profile-page';
