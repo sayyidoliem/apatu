@@ -34,3 +34,6 @@
 *.zip             binary
 *.ttf             binary
 *.otf             binary
+
+
+*.c++ linguist-language=dart
